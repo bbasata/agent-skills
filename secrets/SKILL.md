@@ -1,4 +1,4 @@
---
+---
 name: secrets
 description: My personal system for managing secrets. Use this when a secret needs to be generated, when a secret value is needed to call a remote API, or when a secret value needs to be stored securely for later retrieval.
 --
@@ -18,7 +18,7 @@ When a remote API needs a secret value:
    not display the output anywhere. It is okay to keep this value in the system
    clipboard or in a new temporary file with mode 0600.
    ```
-   op item get "{ name }"
+   op item get [item-name]
    ```
 1. If the secret value if found, then offer to use the secret value in the remote API call.
 1. If the secret value is not found, then offer to try again or to skip.
