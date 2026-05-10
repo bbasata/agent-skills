@@ -1,7 +1,7 @@
 ---
 name: secrets
 description: My personal system for managing secrets. Use this when a secret needs to be generated, when a secret value is needed to call a remote API, or when a secret value needs to be stored securely for later retrieval.
---
+---
 
 When a secret named "ThisIsASecret" needs to be generated:
 
