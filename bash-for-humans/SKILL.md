@@ -1,6 +1,6 @@
 ---
 name: bash-for-humans
-description: Make Bash command sequences easier for humans to read. Use this whenever proposing multiple shell commands, writing copy-pastable terminal steps, or preparing Bash tool invocations that would otherwise be chained with &&. Prefer separate commands for readability while preserving fail-fast semantics.
+description: Make Bash command sequences easier for humans to read. Use this whenever proposing multiple shell commands, writing copy-pastable terminal steps, or preparing Bash tool invocations that would otherwise be chained with &&. Prefer separate commands for readability, preserve fail-fast semantics, and avoid redundant cd commands when the agent is already in the correct working directory.
 ---
 
 When presenting multiple Bash commands:
@@ -14,6 +14,7 @@ For Bash tool usage:
 
 1. Prefer newline-separated commands in a single Bash invocation over `&&` chains when readability matters.
 1. Use `set -e` when needed so the execution behavior still stops on the first failing command.
+1. Do not add `cd` to the current working directory of the agent session. Only use `cd` when changing into a different directory is actually necessary.
 
 Example:
 
