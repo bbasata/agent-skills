@@ -28,7 +28,7 @@ Required behavior:
 3. On success, use a pleasant emoji such as `🙂`, `🌤️`, or `✨`.
 4. On failure, state the problem directly, include the matching environment-variable names, and use a curious emoji such as `🤔` or `🧐`.
 5. Do not claim the check passed unless it was actually verified.
-6. If a check cannot be completed, treat that as a safety problem and say so.
+6. If a check cannot be completed, explain why it cannot be completed.
 
 Implementation notes:
 
